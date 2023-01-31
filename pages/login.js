@@ -65,7 +65,7 @@ export default function Login() {
             <div className="card card-outline card-primary">
               <div className="card-header text-center">
                 <a href="#" className="h1">
-                  <b>G-lab</b> Gl
+                  <b>G-Lab</b> Gl
                 </a>
               </div>
               <div className="card-body">

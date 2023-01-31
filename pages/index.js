@@ -185,7 +185,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Glab</title>
+        <title>G-Lab</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
