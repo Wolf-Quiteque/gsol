@@ -183,7 +183,7 @@ export default function Home() {
   }, [file]);
 
   return (
-    <div className="container" style={{ backgroundColor: "grey" }}>
+    <div className="container">
       <Head>
         <title>Gsmart</title>
         <link rel="icon" href="/favicon.ico" />
