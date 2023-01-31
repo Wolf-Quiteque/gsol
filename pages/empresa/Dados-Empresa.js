@@ -10,6 +10,7 @@ export default function DadosEmpresa({ empresa }) {
 
   const [nome, setnome] = useState();
   const [email, setemail] = useState();
+  const [passwored, setpasswored] = useState();
 
   const Cadastrar = async () => {
     toaststate = toast.loading("aguarde...", { closeOnClick: true });
@@ -24,6 +25,7 @@ export default function DadosEmpresa({ empresa }) {
           email: email.toLowerCase(),
           idempresa: empresa._id,
           nome: nome,
+          passwored: passwored,
         }),
       });
       const data = await res.json();
@@ -188,6 +190,20 @@ export default function DadosEmpresa({ empresa }) {
                         placeholder="email..."
                         onChange={(e) => {
                           setemail(e.target.value);
+                        }}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="col-md-4">
+                    <div className="form-group">
+                      <label>Senha</label>
+                      <input
+                        type="password"
+                        className="form-control form-control-border border-width-2"
+                        placeholder="senha..."
+                        onChange={(e) => {
+                          setpasswored(e.target.value);
                         }}
                       />
                     </div>
