@@ -257,7 +257,7 @@ export default function Layout({ children }) {
             <aside className="main-sidebar sidebar-dark-primary elevation-4 ">
               <Link href="/">
                 <a className="brand-link">
-                  <span className="brand-text font-weight-light">GSMART</span>
+                  <span className="brand-text font-weight-light">G-LAB</span>
                 </a>
               </Link>
 
