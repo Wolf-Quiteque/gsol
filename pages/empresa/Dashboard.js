@@ -69,7 +69,7 @@ export default function Dashboard({ empresa }) {
         id: empresa._id,
         img: img ? result.url : "none",
         text: Text ? Text : "none",
-        sender: "gsmart",
+        sender: "G-lab",
         empresaname: empresa.nome,
         reciver: empresa._id,
         createdTime: new Date(),
