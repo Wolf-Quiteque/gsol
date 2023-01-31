@@ -36,12 +36,12 @@ async function handler(req, res) {
   });
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "mail.emarpeaccounting.ao",
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "marcioqui3@gmail.com", // generated ethereal user
-      pass: "shinobi777", // generated ethereal password
+      user: "emainvestsupport@emarpeaccounting.ao", // generated ethereal user
+      pass: "2]Dl);9!A@}~", // generated ethereal password
     },
   });
 
@@ -65,7 +65,7 @@ async function handler(req, res) {
     html:
       +"<p>ola," +
       nome +
-      "</p><p>Convite para uso da Platafroma -  <a target='_blank' href='https://emarpe.vercel.app/'>acede aqui! </a></p> estas são suas credenciais<p>email: " +
+      "</p><p>Convite para uso da Platafroma -  <a target='_blank' href='https://gsmart.vercel.app/'>acede aqui! </a></p> estas são suas credenciais<p>email: " +
       email +
       "</p>senha: " +
       userpassword, // html body
