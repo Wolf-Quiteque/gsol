@@ -145,13 +145,15 @@ export default function Dashboard({ empresa }) {
                                 {m.empresaname}
                               </span>
                               <span className="direct-chat-timestamp float-left ml-3">
-                                23 Jan 2:00 pm
+                                {timeAgo.format(new Date(m.createdTime))}
                               </span>
                             </div>
 
                             <div className="direct-chat-text col-3">
-                              Is this template really for free? That's
-                              unbelievable!
+                              {m.text != "none" && m.text}
+                              {m.img != "none" && (
+                                <img className="img-thumbnail" src={m.img} />
+                              )}
                             </div>
                           </div>
                         ) : (
