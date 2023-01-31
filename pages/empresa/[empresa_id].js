@@ -24,7 +24,7 @@ export default function EmpresaDetalhes({ empresa }) {
 
 export async function getServerSideProps(context) {
   const data = await fetch(
-    "http://localhost:3000/api/empresa/infoempresa?empresa_id=" +
+    "https://gsmart.vercel.app/api/empresa/infoempresa?empresa_id=" +
       context.query.empresa_id
   );
   const empresa = await data.json();
