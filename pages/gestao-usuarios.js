@@ -129,6 +129,15 @@ export default function GestaoUsuarios() {
         autoClose: false,
       });
     }
+
+    const data = await res.json();
+    toast.update(toaststate, {
+      render: data.message,
+      type: "success",
+      isLoading: false,
+      closeOnClick: true,
+      autoClose: false,
+    });
     setreload(makeid());
     setloading(false);
   };
